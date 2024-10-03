@@ -19,20 +19,49 @@
                     <h1>FutBet</h1>
                 </div>
 
-                <div class="cardMain" id="visibilidade">
-                    <h2>Teste sua sorte sobre as partidas de futebol.</h2>
-                    <p>Escolha seu palpite para cada time apresentado daquela partida</p>
-                    <p>Clique em "Enviar palpite" e vá para o próximo jogo</p>
-                    <p>Pontuação:</p>
-                    <p>
-                        Acertar a quantidade de gols de um dos times = 5 pontos<br>
-                        Acertar o placar = 10 pontos
-                    </p>
-                    <p class="bold">Boa sorte!</p>
+                <div class="cardMain">
+                    <div class="cardHome" id="card-home">
+                        <h2>Teste sua sorte sobre as partidas de futebol.</h2>
+                        <p>Escolha seu palpite para cada time apresentado daquela partida</p>
+                        <p>Clique em "Enviar palpite" e vá para o próximo jogo</p>
+                        <p>Pontuação:</p>
+                        <p>
+                            Acertar a quantidade de gols de um dos times = 5 pontos<br>
+                            Acertar o placar = 10 pontos
+                        </p>
+                        <p class="bold">Boa sorte!</p>
+                    </div>
+
+                    <div class="cardJogo" id="card-jogo" style="display: none;">
+                        <div class="times">
+                            <img src="" alt="" id="team1">
+                            <img src="" alt="" id="team2">
+                        </div>
+
+                        <div class="palpites">
+                            <input type="number" id="guessTeam1" class="palpite">
+                            <input type="number" id="guessTeam2" class="palpite">
+                        </div>
+
+                        <div class="result" id="result">
+
+                        </div>
+
+                        <div class="btnPalpite">
+                            <button onclick="enviarPalpite()" id="btnPalpite">Enviar palpite</button>
+                        </div>
+                    </div>
+
+                    <div class="cardFinal">
+                        <div class="text">
+                            <h2>Você chegou ao final do jogo, parabéns!</h2>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="button">
-                    <button onclick="iniciar()">Iniciar o jogo</button>
+                    <button onclick="iniciar()" id="iniciar">Iniciar o jogo</button>
+                    <button onclick="nextRound()" style="display: none;" id="btnProxGame">Próximo jogo</button>
                 </div>
             </div>
         </article>
