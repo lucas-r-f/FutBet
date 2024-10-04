@@ -63,6 +63,7 @@ body{
 .cardMain p {
     padding: 10px 0;
     color: #181818;
+    text-align: center;
 }
 
 .bold{
@@ -91,6 +92,20 @@ body{
     box-shadow: 0px 0px 10px 0px #000;
 }
 
+.result .error{
+    color: rgb(214, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing:0.8px;
+}
+
+
+/* Card Home */
+
+.cardHome {
+    display: flex;
+    flex-direction: column;
+}
 
 /* Card jogo */
 
@@ -164,3 +179,25 @@ body{
     padding: 5px;
 }
 
+/* Card final */
+
+.cardFinal .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardFinal .text button{
+    padding: 5px 20px;
+    border-radius: 8px;
+    border: 1px solid #45552a;
+    background-color: #cccccc73;
+    box-shadow: 0px 0px 5px 0px #000;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s;
+    height: 30px;
+}
+
+.cardFinal .text button:hover{
+    box-shadow: 0px 0px 10px 0px #000;
+}
